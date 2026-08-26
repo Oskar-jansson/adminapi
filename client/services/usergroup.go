@@ -68,7 +68,7 @@ func (c *UserGroupService) Create(ctx context.Context, newUserGroup models.Depar
 	return obj, nil
 }
 
-func (c *UserGroupService) Edit(ctx context.Context, id int, changes models.DepartmentInput) (*models.UserGroup, error) {
+func (c *UserGroupService) Edit(ctx context.Context, id int, changes models.UserGroupInput) (*models.UserGroup, error) {
 	resp, err := NewRequest(ctx, c.sc).
 		Method("PATCH", fmt.Sprintf("/usergroup/%d", id)).
 		Body(changes).
