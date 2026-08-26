@@ -67,7 +67,7 @@ type CardInput struct {
 	Timecode          *uint32 `json:"timecode,omitempty"`
 	Timecodetype      *uint32 `json:"timecodetype,omitempty"`
 	Timebookings      *string `json:"timebookings,omitempty"`
-	Booktype          *string `json:"booktype"`
+	Booktype          *string `json:"booktype,omitempty"`
 	Rastamp           *string `json:"rastamp,omitempty"`
 	Phoneshort        *string `json:"phoneshort,omitempty"`
 	Phonetele         *string `json:"phonetele,omitempty"`
